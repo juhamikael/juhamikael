@@ -1,8 +1,7 @@
 ### Hi there 👋
-
 [![Juhamikael's GitHub stats](https://github-readme-stats.vercel.app/api?username=juhamikael&show_icons=true&card_width=1&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
-[![Top Langs on Personal Projects](https://github-readme-stats.vercel.app/api/top-langs/?username=juhamikael&layout=compact&exclude_repo=WeatherApp,schoolProjects,self_driving_car_SJOM21&custom_title=Personal%20projects&theme=dark&count_private=true)](https://github.com/anuraghazra/github-readme-stats)
-
+[![Top Langs on School projects](https://github-readme-stats.vercel.app/api/top-langs/?username=juhamikael&layout=compact&exclude_repo=macro_counter_database,liigadata_analysis,unzipper,make_new_folder,fl_studio_stem_renamer&custom_title=School%20projects&theme=dark&count_private=true)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs on Personal projects](https://github-readme-stats.vercel.app/api/top-langs/?username=juhamikael&layout=compact&exclude_repo=WeatherApp,schoolProjects,self_driving_car_SJOM21&custom_title=Personal%20projects&theme=dark&count_private=true)](https://github.com/anuraghazra/github-readme-stats)
 
 
 <!--
