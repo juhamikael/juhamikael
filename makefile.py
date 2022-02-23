@@ -11,7 +11,7 @@ layout = "&layout=compact"
 projects = ["School%20projects", "Personal%20projects",
             "School projects", "Personal projects"]
 
-title = [f"[![Top Langs on {projects[2]}]", f"[![Top Langs on {projects[3]}]"]
+title = [f"![Top Langs on {projects[2]}]", f"[![Top Langs on {projects[3]}]"]
 
 title_school = f"&custom_title={projects[0]}"
 title_personal = f"&custom_title={projects[1]}"
@@ -20,6 +20,8 @@ theme = f"&theme=dark"
 private_count = f"&count_private=true"
 language_count = f"&langs_count=3"
 line_height = "&line_height=100"
+
+readme_script = "[Check out the script I made to make this README.md file](https://github.com/juhamikael/juhamikael/blob/main/makefile.py)"
 
 school_project_url = f"{base_url}{username}{layout}{exclude_personal_projects}{title_school}{theme}{line_height}{language_count}{private_count}{language_count})]"
 personal_project_url = f"{base_url}{username}{layout}{exclude_school_projects}{title_personal}{theme}{line_height}{private_count}{language_count})]"
@@ -30,7 +32,7 @@ readme_pinned_repos = ["liigadata_analysis", "MacroCounter"]
 repos = []
 for i in readme_pinned_repos:
     repos.append(
-        f"[![Readme Card](https://github-readme-stats.vercel.app/api/pin/{username}&repo={i}{theme})]({github_profile}{i})")
+        f"![Readme Card](https://github-readme-stats.vercel.app/api/pin/{username}&repo={i}{theme})]({github_profile}{i})")
 
 print(repos)
 
@@ -54,3 +56,6 @@ with open('README.md', 'w') as f:
     for i in repos:
         f.write(i)
         f.write("\n")
+
+    # Can be deleted
+    f.write(f"\n\n## {readme_script}\n")
