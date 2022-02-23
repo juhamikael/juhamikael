@@ -1,7 +1,9 @@
 ### Hi there 👋
 
 [![Juhamikael's GitHub stats](https://github-readme-stats.vercel.app/api?username=juhamikael&show_icons=true&card_width=1&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
-[![Top Langs on Personal Projects](https://github-readme-stats.vercel.app/api/top-langs/?username=juhamikael&layout=compact&exclude_repo=WeatherApp,schoolProjects&theme=dark&count_private=true)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs on Personal Projects](https://github-readme-stats.vercel.app/api/top-langs/?username=juhamikael&layout=compact&exclude_repo=WeatherApp,schoolProjects,self_driving_car_SJOM21&custom_title=Personal%20projects&theme=dark&count_private=true)](https://github.com/anuraghazra/github-readme-stats)
+
+
 
 <!--
 **juhamikael/juhamikael** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
