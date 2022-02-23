@@ -32,7 +32,7 @@ readme_pinned_repos = ["liigadata_analysis", "MacroCounter"]
 repos = []
 for i in readme_pinned_repos:
     repos.append(
-        f"![Readme Card](https://github-readme-stats.vercel.app/api/pin/{username}&repo={i}{theme})]({github_profile}{i})")
+        f"[![Readme Card](https://github-readme-stats.vercel.app/api/pin/{username}&repo={i}{theme})]({github_profile}{i})")
 
 print(repos)
 

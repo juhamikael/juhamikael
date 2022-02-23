@@ -5,8 +5,8 @@
 </p>
 
 ## Currently Working with:
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=juhamikael&repo=liigadata_analysis&theme=dark)](https://github.com/juhamikael/liigadata_analysis)
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=juhamikael&repo=MacroCounter&theme=dark)](https://github.com/juhamikael/MacroCounter)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=juhamikael&repo=liigadata_analysis&theme=dark)](https://github.com/juhamikael/liigadata_analysis)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=juhamikael&repo=MacroCounter&theme=dark)](https://github.com/juhamikael/MacroCounter)
 
 
 ## [Check out the script I made to make this README.md file](https://github.com/juhamikael/juhamikael/blob/main/makefile.py)
