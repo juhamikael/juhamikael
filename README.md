@@ -4,7 +4,7 @@
 <a href="https://github.com/juhamikael/"><img src="https://github-readme-stats.vercel.app/api?username=juhamikael&show_icons=true&theme=dark"/>
 </p>
 
-## Currently Working with:
+## Currently working with:
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=juhamikael&repo=liigadata_analysis&theme=dark)](https://github.com/juhamikael/liigadata_analysis)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=juhamikael&repo=MacroCounter&theme=dark)](https://github.com/juhamikael/MacroCounter)
 

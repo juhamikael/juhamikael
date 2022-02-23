@@ -51,7 +51,7 @@ with open('README.md', 'w') as f:
         f.write("\n")
     f.write("</p>\n\n")
 
-    f.write("## Currently Working with:")
+    f.write("## Currently working with:")
     f.write("\n")
     for i in repos:
         f.write(i)
