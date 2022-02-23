@@ -21,7 +21,7 @@ private_count = f"&count_private=true"
 language_count = f"&langs_count=3"
 line_height = "&line_height=100"
 
-readme_script = "[Check out the script I made to make this README.md file](https://github.com/juhamikael/juhamikael/blob/main/makefile.py)"
+readme_script = "[Check out the script I made for this README.md file](https://github.com/juhamikael/juhamikael/blob/main/makefile.py)"
 
 school_project_url = f"{base_url}{username}{layout}{exclude_personal_projects}{title_school}{theme}{line_height}{language_count}{private_count}{language_count})]"
 personal_project_url = f"{base_url}{username}{layout}{exclude_school_projects}{title_personal}{theme}{line_height}{private_count}{language_count})]"

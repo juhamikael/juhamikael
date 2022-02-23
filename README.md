@@ -9,4 +9,4 @@
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=juhamikael&repo=MacroCounter&theme=dark)](https://github.com/juhamikael/MacroCounter)
 
 
-## [Check out the script I made to make this README.md file](https://github.com/juhamikael/juhamikael/blob/main/makefile.py)
+## [Check out the script I made for this README.md file](https://github.com/juhamikael/juhamikael/blob/main/makefile.py)
