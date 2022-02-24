@@ -1,61 +1,78 @@
 import emoji
-exclude_personal_projects = "&exclude_repo=macro_counter_database,liigadata_analysis,unzipper,make_new_folder,fl_studio_stem_renamer"
-exclude_school_projects = "&exclude_repo=WeatherApp,schoolProjects,self_driving_car_SJOM21"
+from conf import username,languages_count,layout_value,theme_value,print_checkout,pinned_repos,pin_repos
+from conf import show_icons_value,private_count_value,custom_titles_list,p_align,exclude_value,exclude_1,exclude_2
 
-base_url = "https://github-readme-stats.vercel.app/api/top-langs/"
-git_hub_readme_stats = "(https://github.com/anuraghazra/github-readme-stats)"
-username = "?username=juhamikael"
-github_profile = "https://github.com/juhamikael/"
-layout = "&layout=compact"
+text_file = open("public_repos.txt", "r")
+lines = text_file.readlines()
+public_repos = []
+for i in lines: public_repos.append(i[:-1])
+print(f"\n{username.capitalize()} public repositories:")
+print("--------------------------------")
+for i in public_repos: print(f"{i}")
+print("--------------------------------")
 
-projects = ["School%20projects", "Personal%20projects",
-            "School projects", "Personal projects"]
+### DONT CHANGE ###
+exclude = "&exclude_repo"
+theme = f"&theme={theme_value}"
+private_count = f"&count_private={private_count_value}"
+language_count = f"&langs_count={languages_count}"
+layout = f"&layout={layout_value}"
+show_icons = f"&show_icons={show_icons_value}"
+base_url = "https://github-readme-stats.vercel.app/api"
+github_profile = f"https://github.com/{username}/"
+ahref = f'<a href="{github_profile}">'
+top_languages_url = f"{base_url}/top-langs/?username={username}{layout}{theme}{private_count}{language_count}"
+p_tag = f"<p vertical-align:{p_align}>\n"
+p_r = "%20projects"
+projects = []
+for i in custom_titles_list: projects.append(f"{i}{p_r}")
+###################
 
-title = [f"![Top Langs on {projects[2]}]", f"[![Top Langs on {projects[3]}]"]
+###################
+if not exclude_value:
+    exclude_list = f"{top_languages_url})]"
+    stats = [f"{top_languages_url}&custom_title=My%20top%20languages"]
+else:
+    exclude_list = [exclude_1, exclude_2]
+    custom_titles = []
+    sep_url = []
+    stats = []
+    for i in projects: custom_titles.append(f"&custom_title={i}")
+    for i in range(len(custom_titles)): sep_url.append(f"{top_languages_url}{exclude_list[i]}{custom_titles[i]}")
+    for i in sep_url: stats.append(i)
+###################
 
-title_school = f"&custom_title={projects[0]}"
-title_personal = f"&custom_title={projects[1]}"
+github_stats = f"{base_url}?username={username}{show_icons}{theme}"
+repos = []
 
-theme = f"&theme=dark"
-private_count = f"&count_private=true"
-language_count = f"&langs_count=3"
-line_height = "&line_height=100"
-
+for i in pinned_repos:
+    repos.append(
+        f"[![Readme Card]({base_url}/pin/?username={username}&repo={i}{theme})]({github_profile}{i})")
 readme_script = "[Check out the script I made for this README.md file](https://github.com/juhamikael/juhamikael/blob/main/makefile.py)"
 
-school_project_url = f"{base_url}{username}{layout}{exclude_personal_projects}{title_school}{theme}{line_height}{language_count}{private_count}{language_count})]"
-personal_project_url = f"{base_url}{username}{layout}{exclude_school_projects}{title_personal}{theme}{line_height}{private_count}{language_count})]"
-github_stats = "https://github-readme-stats.vercel.app/api?username=juhamikael&show_icons=true&theme=dark"
 
-readme_pinned_repos = ["liigadata_analysis", "MacroCounter"]
-
-repos = []
-for i in readme_pinned_repos:
-    repos.append(
-        f"[![Readme Card](https://github-readme-stats.vercel.app/api/pin/{username}&repo={i}{theme})]({github_profile}{i})")
-
-print(repos)
-
-
-stats = [school_project_url, personal_project_url, github_stats]
-
-
+###############
 with open('README.md', 'w') as f:
 
     f.write(f"### Hi, I'm Juha {emoji.emojize(':wave:')} \n")
-
-    f.write("<p vertical-align:top>")
-
+    f.write(p_tag)
     for i in stats:
-        f.write(f'<a href="{github_profile}"><img src="{i}"/>')
-        f.write("\n")
+        f.write(f'{ahref}<img src="{i}"/>\n')
+
+    f.write(f'{ahref}<img src="{github_stats}"/>\n')
     f.write("</p>\n\n")
 
-    f.write("## Currently working with:")
-    f.write("\n")
-    for i in repos:
-        f.write(i)
+    if pin_repos:
+        f.write("## Currently working with:")
         f.write("\n")
-
+        for i in repos:
+            f.write(i)
+            f.write("\n")
+        
     # Can be deleted
-    f.write(f"\n\n## {readme_script}\n")
+    if print_checkout:
+        f.write(f"\n\n## {readme_script}\n")
+    
+######################
+
+

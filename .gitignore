@@ -1,2 +1,11 @@
 
 *.ipynb
+__pycache__/conf.cpython-310.pyc
+__pycache__/functions.cpython-310.pyc
+__pycache__/makefile.cpython-310.pyc
+__pycache__/own_function_lib.cpython-310.pyc
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/juhamikael.iml
+.idea/inspectionProfiles/profiles_settings.xml

@@ -1,2 +1,2 @@
-@ECHO OFF
 python makefile.py
+PAUSE
