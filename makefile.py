@@ -49,7 +49,7 @@ for i in pinned_repos:
     repos.append(
         f"[![Readme Card]({base_url}/pin/?username={username}&repo={i}{theme})]({github_profile}{i})")
 readme_script = "[Check out the script I made for this README.md file](https://github.com/juhamikael/juhamikael/blob/main/makefile.py)"
-
+school_projects = 0
 
 ###############
 with open('README.md', 'w') as f:
@@ -57,8 +57,17 @@ with open('README.md', 'w') as f:
     f.write(f"### Hi, I'm Juha {emoji.emojize(':wave:')} \n")
     f.write(p_tag)
     for i in stats:
+        print(i)
+        if school_projects == 0:
+            ahref = f'<a href="{github_profile}schoolProjects">'
+        elif school_projects ==  1:
+            ahref = f'<a href="{github_profile}?tab=repositories">'
+       
+            
         f.write(f'{ahref}<img src="{i}"/>\n')
-
+        school_projects+=1
+        
+    ahref = f'<a href="{github_profile}">'
     f.write(f'{ahref}<img src="{github_stats}"/>\n')
     f.write("</p>\n\n")
 
