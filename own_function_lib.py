@@ -20,10 +20,10 @@ def write_public_repos_to_txt(repos_list:list):
             x+=1
 
 
-def exclude_list(public_repos:list):
+def exclude_all_but_one_repo(public_repos:list,repo_to_show:str):
     exclude_list = []
     for i in public_repos:
-       if i == str("schoolProjects"):
+       if i == str(repo_to_show):
            continue
        else:
            exclude_list.append(f"{i},")
@@ -35,3 +35,9 @@ def exclude_list(public_repos:list):
     for i in exclude_list:
         string_to_return = string_to_return+i
     return string_to_return
+
+
+text_file = open("public_repos.txt", "r")
+lines = text_file.readlines()
+public_repos = []
+for i in lines: public_repos.append(i[:-1])

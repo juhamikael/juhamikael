@@ -1,14 +1,8 @@
-from own_function_lib import exclude_list
+from own_function_lib import exclude_all_but_one_repo
+from own_function_lib import public_repos
 
-exclude = "&exclude_repo"
-text_file = open("public_repos.txt", "r")
-lines = text_file.readlines()
-public_repos = []
-for i in lines: public_repos.append(i[:-1])
 
-for_school_projects = exclude_list(public_repos)
-print("Exclude for school: ", for_school_projects)
-
+for_exclude_1 = exclude_all_but_one_repo(public_repos,"schoolProjects")
 
 ### CHANGE THESE ##
 username = "juhamikael"
@@ -22,8 +16,8 @@ p_align = "top"
 exclude_value = True
 print_checkout = True
 pin_repos = True
-exclude_1 = f"{exclude}={for_school_projects}"
-exclude_2 = f"{exclude}=WeatherApp,schoolProjects,self_driving_car_SJOM21"
+exclude_1 = f"&exclude_repo={for_exclude_1}"
+exclude_2 = f"&exclude_repo=schoolProjects,WeatherApp"
 pinned_repos = ["liigadata_analysis", "MacroCounter"]
 ###################
 
