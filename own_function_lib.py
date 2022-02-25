@@ -18,3 +18,20 @@ def write_public_repos_to_txt(repos_list:list):
         for i in repos_list: 
             f.write(f"{i}\n") 
             x+=1
+
+
+def exclude_list(public_repos:list):
+    exclude_list = []
+    for i in public_repos:
+       if i == str("schoolProjects"):
+           continue
+       else:
+           exclude_list.append(f"{i},")
+    remove_comma = exclude_list[len(exclude_list)-1]
+    remove_comma = remove_comma[:-1]
+    exclude_list.pop()
+    exclude_list.append(remove_comma)
+    string_to_return = ""
+    for i in exclude_list:
+        string_to_return = string_to_return+i
+    return string_to_return

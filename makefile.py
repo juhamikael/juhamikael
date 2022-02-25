@@ -2,6 +2,12 @@ import emoji
 from conf import username,languages_count,layout_value,theme_value,print_checkout,pinned_repos,pin_repos
 from conf import show_icons_value,private_count_value,custom_titles_list,p_align,exclude_value,exclude_1,exclude_2
 
+
+
+
+
+
+
 text_file = open("public_repos.txt", "r")
 lines = text_file.readlines()
 public_repos = []
@@ -10,6 +16,8 @@ print(f"\n{username.capitalize()} public repositories:")
 print("--------------------------------")
 for i in public_repos: print(f"{i}")
 print("--------------------------------")
+
+
 
 ### DONT CHANGE ###
 exclude = "&exclude_repo"
@@ -57,7 +65,6 @@ with open('README.md', 'w') as f:
     f.write(f"### Hi, I'm Juha {emoji.emojize(':wave:')} \n")
     f.write(p_tag)
     for i in stats:
-        print(i)
         if school_projects == 0:
             ahref = f'<a href="{github_profile}schoolProjects">'
         elif school_projects ==  1:
@@ -83,5 +90,6 @@ with open('README.md', 'w') as f:
         f.write(f"\n\n## {readme_script}\n")
     
 ######################
+
 
 
