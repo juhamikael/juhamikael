@@ -6,8 +6,8 @@
 </p>
 
 ## Currently working with:
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=juhamikael&repo=macroReact_PythonAPI&theme=dark)](https://github.com/juhamikael/macroReact_PythonAPI)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=juhamikael&repo=liigadata_analysis&theme=dark)](https://github.com/juhamikael/liigadata_analysis)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=juhamikael&repo=MacroCounter&theme=dark)](https://github.com/juhamikael/MacroCounter)
 
 
 ## [Check out the script I made for this README.md file](https://github.com/juhamikael/juhamikael/blob/main/makefile.py)
