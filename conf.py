@@ -18,7 +18,8 @@ print_checkout = True
 pin_repos = True
 exclude_1 = f"&exclude_repo={for_exclude_1}"
 exclude_2 = f"&exclude_repo=schoolProjects,WeatherApp"
-pinned_repos = ["liigadata_analysis", "MacroCounter"]
+pinned_repos = ["macroReact_PythonAPI", "liigadata_analysis"]
 ###################
+
 
 
