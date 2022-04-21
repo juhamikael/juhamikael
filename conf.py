@@ -1,8 +1,7 @@
 from own_function_lib import exclude_all_but_one_repo
 from own_function_lib import public_repos
 
-
-for_exclude_1 = exclude_all_but_one_repo(public_repos,"schoolProjects")
+for_exclude_1 = exclude_all_but_one_repo(public_repos, "schoolProjects")
 
 ### CHANGE THESE ##
 username = "juhamikael"
@@ -18,8 +17,5 @@ print_checkout = True
 pin_repos = True
 exclude_1 = f"&exclude_repo={for_exclude_1}"
 exclude_2 = f"&exclude_repo=schoolProjects,WeatherApp"
-pinned_repos = ["macroReact_PythonAPI", "liigadata_analysis"]
+pinned_repos = ["macro-counter-react-fastapi-postgre"]
 ###################
-
-
-

@@ -1,6 +1,6 @@
 import emoji
-from conf import username,languages_count,layout_value,theme_value,print_checkout,pinned_repos,pin_repos
-from conf import show_icons_value,private_count_value,custom_titles_list,p_align,exclude_value,exclude_1,exclude_2
+from conf import username, languages_count, layout_value, theme_value, print_checkout, pinned_repos, pin_repos
+from conf import show_icons_value, private_count_value, custom_titles_list, p_align, exclude_value, exclude_1, exclude_2
 
 text_file = open("public_repos.txt", "r")
 lines = text_file.readlines()
@@ -10,7 +10,6 @@ print(f"\n{username.capitalize()} public repositories:")
 print("--------------------------------")
 for i in public_repos: print(f"{i}")
 print("--------------------------------")
-
 
 ### DONT CHANGE ###
 exclude = "&exclude_repo"
@@ -54,19 +53,17 @@ school_projects = 0
 
 ###############
 with open('README.md', 'w') as f:
-
     f.write(f"### Hi, I'm Juha {emoji.emojize(':wave:')} \n")
     f.write(p_tag)
     for i in stats:
         if school_projects == 0:
             ahref = f'<a href="{github_profile}schoolProjects">'
-        elif school_projects ==  1:
+        elif school_projects == 1:
             ahref = f'<a href="{github_profile}?tab=repositories">'
-       
-            
+
         f.write(f'{ahref}<img src="{i}"/>\n')
-        school_projects+=1
-        
+        school_projects += 1
+
     ahref = f'<a href="{github_profile}">'
     f.write(f'{ahref}<img src="{github_stats}"/>\n')
     f.write("</p>\n\n")
@@ -77,12 +74,9 @@ with open('README.md', 'w') as f:
         for i in repos:
             f.write(i)
             f.write("\n")
-        
+
     # Can be deleted
     if print_checkout:
         f.write(f"\n\n## {readme_script}\n")
-    
+
 ######################
-
-
-
