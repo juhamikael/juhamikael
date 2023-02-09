@@ -5,5 +5,3 @@
 </p>
 
 
-
-## [Check out the script I made for this README.md file](https://github.com/juhamikael/juhamikael/blob/main/makefile.py)
